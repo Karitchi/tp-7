@@ -1,6 +1,7 @@
 import unittest
 from fraction import Fraction
 
+
 class TestFractionInitialization(unittest.TestCase):
     def test_default_initialization(self):
         """Test default initialization (no arguments)."""

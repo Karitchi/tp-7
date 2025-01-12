@@ -1,6 +1,7 @@
 import unittest
 from fraction import Fraction
 
+
 class TestFractionPropertiesChecking(unittest.TestCase):
     def test_is_zero(self):
         """Test the is_zero method of the Fraction class."""
@@ -33,6 +34,7 @@ class TestFractionPropertiesChecking(unittest.TestCase):
         self.assertFalse(Fraction(1, 2).is_adjacent_to(Fraction(1, 4)))
         self.assertTrue(Fraction(2, 3).is_adjacent_to(Fraction(1, 2)))
         self.assertFalse(Fraction(2, 3).is_adjacent_to(Fraction(1, 3)))
+
 
 if __name__ == "__main__":
     unittest.main()

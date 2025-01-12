@@ -1,6 +1,7 @@
 import unittest
 from fraction import Fraction
 
+
 class TestFractionOverloading(unittest.TestCase):
     def test_add(self):
         """Test the __add__ method of the Fraction class."""
@@ -47,10 +48,11 @@ class TestFractionOverloading(unittest.TestCase):
     def test_float(self):
         """Test the __float__ method of the Fraction class."""
         self.assertAlmostEqual(float(Fraction(1, 2)), 0.5)
-        self.assertAlmostEqual(float(Fraction(1, 3)), 1/3)
+        self.assertAlmostEqual(float(Fraction(1, 3)), 1 / 3)
         self.assertAlmostEqual(float(Fraction(-1, 2)), -0.5)
         self.assertAlmostEqual(float(Fraction(2, 1)), 2.0)
         self.assertAlmostEqual(float(Fraction(0, 1)), 0.0)
+
 
 if __name__ == "__main__":
     unittest.main()

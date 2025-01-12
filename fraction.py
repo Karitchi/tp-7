@@ -99,7 +99,7 @@ class Fraction:
         """
         integer_part = abs(self.num) // self.den
         remainder = abs(self.num) % self.den
-        sign = '-' if self.num < 0 else ''
+        sign = "-" if self.num < 0 else ""
         if remainder == 0:
             return f"{sign}{integer_part}"
         elif integer_part == 0:

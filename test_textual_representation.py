@@ -1,6 +1,7 @@
 import unittest
 from fraction import Fraction
 
+
 class TestFractionTextualRepresentation(unittest.TestCase):
     def test_str(self):
         """Test the __str__ method of the Fraction class."""
@@ -19,6 +20,7 @@ class TestFractionTextualRepresentation(unittest.TestCase):
         self.assertEqual(Fraction(-7, 4).as_mixed_number(), "-1 3/4")
         self.assertEqual(Fraction(7, -4).as_mixed_number(), "-1 3/4")
         self.assertEqual(Fraction(-7, -4).as_mixed_number(), "1 3/4")
+
 
 if __name__ == "__main__":
     unittest.main()
