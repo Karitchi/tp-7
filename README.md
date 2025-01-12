@@ -1,11 +1,16 @@
 # Fraction Project
 
-## Running Tests
+## Running Manual Tests
 
-To run the tests, follow these steps:
+1. Run the manual test suite.
 
-1. Ensure you have Python installed on your system.
-2. Run the test suite.
+```sh
+python test_fraction_manual.py
+```
+
+## Running Unit Tests
+
+1. Run the test suite.
 
 ```sh
 python test_suite.py
